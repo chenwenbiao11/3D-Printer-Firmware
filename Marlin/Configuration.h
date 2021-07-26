@@ -362,7 +362,7 @@
  * Enable and connect the power supply to the PS_ON_PIN.
  * Specify whether the power supply is active HIGH or active LOW.
  */
-//#define PSU_CONTROL
+#define PSU_CONTROL
 //#define PSU_NAME "Power Supply"
 
 #if ENABLED(PSU_CONTROL)
@@ -374,7 +374,7 @@
   //#define PSU_POWERUP_GCODE  "M355 S1"  // G-code to run after power-on (e.g., case light on)
   //#define PSU_POWEROFF_GCODE "M355 S0"  // G-code to run before power-off (e.g., case light off)
 
-  //#define AUTO_POWER_CONTROL      // Enable automatic control of the PS_ON pin
+  #define AUTO_POWER_CONTROL      // Enable automatic control of the PS_ON pin
   #if ENABLED(AUTO_POWER_CONTROL)
     #define AUTO_POWER_FANS         // Turn on PSU if fans need power
     #define AUTO_POWER_E_FANS
